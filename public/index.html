@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Food Store</title>
+    <script src="https://cdn.tailwindcss.com/3.4.5"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- header starting  -->
+    <header
+      class="h-screen py-5 bg-[url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png')] bg-no-repeat bg-cover"
+    >
+    <!-- Nav bar striting -->
+    <div class="2xl:container mx-auto py-2 bg-[#ffff] fixed  top-0 left-0 right-0 shadow-lg">
+      <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div class="flex justify-between">
+          <img class="h-12" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png" alt="">
+          <div class="flex items-center justify-end md:hidden">
+            <button  id="menu-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 32 32">
+                <path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z"></path>
+                </svg>
+            </button>
+            <button class="hidden" id="cross-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 24 24">
+                <path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path>
+                </svg>
+            </button>
+          </div>
+        </div>
+        <div class="hidden md:block my-auto" id="menu">
+          <div class="flex  flex-col items-center gap-4  md:justify-end md:flex-row">
+            <a class="font-[Poppins] text-[16px] no-underline hover:underline-offset-4 hover:underline font-medium text-[#000000] leading-6 " href="#">Foods</a>
+            <a class="font-[Poppins] text-[16px] no-underline hover:underline-offset-4 hover:underline font-medium text-[#000000] leading-6" href="#">About</a>
+            <a class="font-[Poppins] text-[16px] no-underline hover:underline-offset-4 hover:underline font-medium text-[#000000] leading-6" href="#">contact</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Nav bar ending-->
+      <div class="2xl:container mx-auto h-full">
+        <div class="w-[90%] mx-auto grid grid-cols-1 h-full">
+          <div class="h-full flex flex-col items-center justify-center gap-2">
+            <div>
+              <h1
+                class="font-[Poppins] font-medium text-[24px] leading-8 text-[#ffff] text-center"
+              >
+                Get Delicious Food Anytime
+              </h1>
+              <p
+                class="font-[Poppins] font-light text-[12px] leading-5 text-[#ffff] text-center"
+              >
+                Eat Smart & Healthy
+              </p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button
+                class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+              >
+                View Menu
+              </button>
+              <button
+                class="py-3 px-4 border border-solid border-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+              >
+                Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header ending -->
+    <!-- Why choose this start-->
+    <section class="py-5">
+      <div class="2xl:container mx-auto space-y-4">
+        <div class="w-[90%] mx-auto grid grid-cols-1">
+          <h1
+            class="font-bold text-[18px] font-[poppins] leading-7 text-[#183b56]"
+          >
+            why choose this?
+          </h1>
+          <p class="font-[poppins] text-[12px] leading-3">
+            We use both original recipes and classic versions of famous food
+            items.
+          </p>
+        </div>
+        <div
+          class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-2 text-center p-5 rounded-xl bg-yellow-50"
+          >
+            <img
+              src="https://ik.imagekit.io/4z8covdo9/Full%20stack/food-serve.png?updatedAt=1702142726430"
+              alt="offers"
+            />
+            <h1 class="font-medium text-[14px] font-[poppins] leading-5">
+              Food Service
+            </h1>
+            <p class="font-light text-[12px] font-[poppins] leading-5">
+              Experience fine dining at the comfort of your home. All our orders
+              are carefully packed and arranged to give you the nothing less
+              than perfect
+            </p>
+            <button
+              class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+            >
+              View Details
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-2 text-center p-5 rounded-xl bg-yellow-50"
+          >
+            <img
+              src="https://ik.imagekit.io/4z8covdo9/Full%20stack/food-serve.png?updatedAt=1702142726430"
+              alt="offers"
+            />
+            <h1 class="font-medium text-[14px] font-[poppins] leading-5">
+              Food Service
+            </h1>
+            <p class="font-light text-[12px] font-[poppins] leading-5">
+              Experience fine dining at the comfort of your home. All our orders
+              are carefully packed and arranged to give you the nothing less
+              than perfect
+            </p>
+            <button
+              class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+            >
+              View Details
+            </button>
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-2 text-center p-5 rounded-xl bg-yellow-50"
+          >
+            <img
+              src="https://ik.imagekit.io/4z8covdo9/Full%20stack/food-serve.png?updatedAt=1702142726430"
+              alt="offers"
+            />
+            <h1 class="font-medium text-[14px] font-[poppins] leading-5">
+              Food Service
+            </h1>
+            <p class="font-light text-[12px] font-[poppins] leading-5">
+              Experience fine dining at the comfort of your home. All our orders
+              are carefully packed and arranged to give you the nothing less
+              than perfect
+            </p>
+            <button
+              class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+            >
+              View Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Why choose this end-->
+    <!-- healthy food start -->
+    <section class="py-5 bg-[#f9fbfe]">
+      <div class="2xl:container mx-auto">
+        <div
+          class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4"
+        >
+          <div class="flex justify-center">
+            <img
+              class="h-52"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/healthy-food-plate-img.png"
+              alt="healthy food"
+            />
+          </div>
+          <div class="space-y-4">
+            <h1
+              class="font-bold text-[18px] font-[poppins] leading-7 text-[#183b56]"
+            >
+              Healthy-Image Fresh, Healthy, Organic, Delicious Fruit
+            </h1>
+            <p class="font-light text-[12px] font-[poppins] leading-4">
+              Say no to harmful chemicals and go fully organic with our range of
+              fresh fruits and veggies. Pamper your body and your senses with
+              the true and unadulterated gifts from mother nature. with the true
+              and unadulterated gifts from mother nature
+            </p>
+            <button
+              class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+            >
+              View Menu
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- healthy food end  -->
+    <!-- explore menu  starting-->
+    <section class="py-5">
+      <div class="2xl:container mx-auto space-y-4">
+        <div class="w-[90%] mx-auto grid grid-cols-1">
+          <h1
+            class="font-[Poppins] font-bold text-[18px] leading-7 text-[#183b56]"
+          >
+            Explore Menu
+          </h1>
+        </div>
+        <div
+          class="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg space-y-2 mx-auto p-2">
+            <img
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/em-ginger-fried-img.png"
+              alt="Product Image"
+            />
+            <p class="font-[Poppins] text-[18px] font-medium leading-7">
+              Non-Veg Starters
+            </p>
+            <p class="flex items-center gap-1">
+              <span class="font-[Poppins] text-[10px] font-light leading-4"
+                >View All</span
+              >
+              <span>
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="0.75em"
+                  width="0.75em"
+                >
+                  <path
+                    fillrule="evenodd"
+                    d="M1 8a.5.5 0 01.5-.5h11.793l-3.147-3.146a.5.5 0 01.708-.708l4 4a.5.5 0 010 .708l-4 4a.5.5 0 01-.708-.708L13.293 8.5H1.5A.5.5 0 011 8z"
+                  ></path>
+                </svg>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- explore menu  ending-->
+    <!-- Delivery and payment stating -->
+    <section class="py-5">
+      <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2">
+          <div class="space-y-4 order-2 lg:order-1">
+            <h1
+              class="font-[Poppins] font-bold text-[18px] leading-6 text-[#183b56]"
+            >
+              Delivery and Payment
+            </h1>
+            <p class="font-[poppins] font-light text-[14px] leading-5">
+              Enjoy hassle-free payment with the plenitude of payment options
+              available for you. Get live tracking and locate your food on a
+              live map. It's quite a sight to see your food arrive to your door.
+              Plus, you get a 5% discount on every order every time you pay
+              online.
+            </p>
+            <button
+              class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+            >
+              Order now
+            </button>
+            <div class="flex items-center gap-4">
+              <img
+                class="h-8"
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                alt="payment method"
+              />
+              <img
+                class="h-8"
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                alt="payment method"
+              />
+              <img
+                class="h-8"
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                alt="payment method"
+              />
+              <img
+                class="h-8"
+                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                alt="payment method"
+              />
+            </div>
+          </div>
+          <div class="flex items-center justify-center order-1 lg:order-2">
+            <img
+              class="h-48"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/delivery-payment-section-img.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Delivery and payment ending -->
+    <!-- Thank you starting -->
+    <section class="py-5">
+      <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2">
+          <div class="space-y-4">
+            <h1
+              class="font-[Poppins] text-[18px] font-bold leading-7 text-[#183b56]"
+            >
+              Thank you for being a valuable customer to us.
+            </h1>
+            <p class="font-[Poppins] text-[14px] font-light leading-5">
+              We have a surprise gift for you
+            </p>
+            <img
+              class="block lg:hidden h-48"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+              alt="Gift image"
+            />
+            <button
+              class="py-3 px-4 bg-yellow-500 rounded-lg text-[#ffff] font-[Poppins] font-normal leading-3 text-[12px]"
+            >
+              Radeen Gift
+            </button>
+          </div>
+          <div class="hidden lg:block mx-auto">
+            <img
+              class="h-48"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+              alt="Gift image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Thank you ending -->
+    <!-- Follow starting -->
+    <section class="py-5">
+      <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-21">
+          <div class="flex flex-col items-center justify-center gap-4">
+            <h1
+              class="font-[Poppins] text-center font-bold text-[18px] text-[#183b56] leading-7"
+            >
+              Follow Us
+            </h1>
+            <div class="flex items-center gap-4">
+              <div
+                class="w-[50px] h-[50px] bg-yellow-500 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="w-[50px] h-[50px] bg-yellow-500 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="w-[50px] h-[50px] bg-yellow-500 rounded-full flex items-center justify-center"
+              >
+                <svg
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  height="1em"
+                  width="1em"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Follow ending -->
+    <!-- Footer starting -->
+    <footer class="py-5 bg-[#0d2436]">
+      <div class="2xl:container mx-auto">
+        <div class="w-[90%] mx-auto grid grid-cols-1">
+          <div class="flex flex-col items-center justify-center gap-2">
+            <img
+              class="h-24"
+              src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/food-munch-logo-light.png"
+              alt="food-munch-logo-light"
+            />
+            <p
+              class="font-[Poppins] font-light text-[14px] leading-5 text-[#ffff]"
+            >
+              orderfood@foodmunch.com
+            </p>
+            <p
+              class="font-[Poppins] font-light text-[14px] leading-5 text-[#ffff]"
+            >
+              123 Ayur Vigyan Nagar, New Delhi, India.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer ending -->
+     <script>
+      const menu=document.getElementById('menu');
+      const menuBtn=document.getElementById('menu-btn');
+      const crossBtn=document.getElementById('cross-btn');
+      menuBtn.addEventListener('click',()=>{
+        menu.classList.remove('hidden');
+        menuBtn.classList.add('hidden');
+        crossBtn.classList.remove('hidden')
+      })
+      crossBtn.addEventListener('click',()=>{
+        menu.classList.add('hidden');
+        menuBtn.classList.remove('hidden');
+        crossBtn.classList.add('hidden')
+      })
+     </script>
+  </body>
+</html>
